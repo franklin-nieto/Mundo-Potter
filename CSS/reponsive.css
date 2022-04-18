@@ -1,0 +1,39 @@
+@media screen and (max-width: 1280px) {
+    
+}
+
+
+@media screen and(max-width: 970px) {
+    div{
+        width: 100%;
+    }
+    .caja{
+    width: 100%;
+    }
+
+    nav ul li a{
+        padding: 10px;
+    }
+}
+
+@media screen and(max-width:767px){
+    
+}
+
+@media screen and(max-width: 600px){
+    nav, nav ul{
+        padding: 0%;
+    }
+
+    nav ul li{
+        text-align: center;
+        width: 100%;
+    }
+    nav li a{
+        display: block;
+    }
+}
+
+@media screen and(max-width: 400px) {
+    
+}
