@@ -54,7 +54,7 @@ p{
 nav{ 
     grid-area: nav;
     height: 80px;
-    background-color: yellow;
+    background: linear-gradient(to left, #740001,#ae0001,#eeba30,#d3a625);
     text-align: center;
     padding: 5px;
 }
@@ -85,7 +85,7 @@ footer {
     grid-area: footer;
     height: 100%;
     width: 100%;
-    background-color: yellow;
+    background: linear-gradient(to left, #740001,#ae0001,#eeba30,#d3a625);
 }
 h4{
     display: block;
