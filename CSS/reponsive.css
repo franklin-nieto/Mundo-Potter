@@ -5,8 +5,7 @@
      }
     
     .principal{
-        width: 200px;
-        height: 100px;
+        width: 40px;
     }
 
     nav{
@@ -41,15 +40,14 @@
     }
 }
   /*index*/
-@media screen and(max-width: 1024px){
+@media screen and(max-width: 425px){
     .grilla{
         display: flex;
         flex-direction: column;
          }
         
          .principal{
-            width: 400px;
-            height: 200px;  
+            width: 40px; 
          }
 
          nav{
