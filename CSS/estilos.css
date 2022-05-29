@@ -4,9 +4,17 @@
   margin: 10px;
 }
 .secreto img {
-  width: 600px;
+  width: 700px;
   margin-top: 10px;
-  padding: 15px;
+  border-radius: 25px;
+  box-shadow: 15px 18px 25px black;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+}
+.secreto img:hover {
+  transform: scale(1.1);
+  box-shadow: 13px 15px 17px black;
+  opacity: 0.9;
 }
 
 .tarjetas {
@@ -27,14 +35,14 @@
   margin: 10px;
   border-radius: 15px;
   text-align: center;
-  height: 85%;
-  width: 300px;
+  width: 450px;
 }
 .destacado .descripcion {
   font-size: 15px;
   padding: 25px;
   margin: 10px;
   display: flex;
+  color: beige;
   align-content: space-around;
   flex-wrap: wrap;
 }
@@ -46,31 +54,58 @@
   text-decoration: none;
 }
 
-.grilla {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  grid-template-areas: "header header header" "main main main" "footer footer footer";
-}
-
 .fondo {
   background-repeat: no-repeat;
   background-size: cover;
 }
 
-header {
-  grid-area: header;
-  display: block;
-  justify-content: space-between;
+.logo {
+  display: flex;
 }
-header .principal {
-  filter: brightness(1);
-  mix-blend-mode: multiply;
-  border: black;
-  width: 400px;
+.logo img {
+  width: 250px;
+  height: 200px;
+}
+.logo h1 {
+  font-size: 35px;
+  text-align: center;
+}
+
+header {
+  width: 100%;
+  background: linear-gradient(to left, #740001, #ae0001, #eeba30, #d3a625);
+}
+header #btn-menu {
+  display: none;
+}
+header label img {
+  display: none;
+  width: 50px;
+  height: 50px;
+  padding: 10px;
+}
+header .menu {
+  background: linear-gradient(to left, #740001, #ae0001, #eeba30, #d3a625);
+}
+header .menu ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+}
+header .menu ul li {
+  list-style: none;
+}
+header .menu ul li a {
+  display: block;
+  padding: 15px 20px;
+  cursor: pointer;
+  color: black;
+  font-size: 25px;
 }
 
 main {
-  grid-area: main;
+  padding: 15px;
+  font-size: 25px;
 }
 main h2 {
   text-align: center;
@@ -93,48 +128,51 @@ main .def {
   color: #000000;
 }
 
-#logo h1 {
-  font-family: sans-serif;
-  font-size: 40px;
-  text-align: center;
-}
-
-nav {
-  grid-area: nav;
-  height: 80px;
-  background: linear-gradient(to left, #740001, #ae0001, #eeba30, #d3a625);
-  text-align: center;
-  padding: 5px;
-}
-nav ul {
-  list-style: none;
-  display: inline-block;
-  padding: 10px;
-}
-nav ul li {
-  float: left;
-  margin-top: 20px;
-}
-nav ul li a {
-  color: rgb(255, 255, 255);
-  font-weight: bold;
-  text-decoration: none;
-  font-size: 20px;
-  padding: 18px;
+.enlace {
+  padding: 15px;
+  font-size: 25px;
 }
 
 footer {
-  grid-area: footer;
-  display: flex;
-  flex-wrap: wrap;
-  height: 100%;
-  width: 100%;
   background: linear-gradient(to left, #740001, #ae0001, #eeba30, #d3a625);
 }
-footer h4 {
-  text-decoration: none;
-  display: block;
-  font-family: "Times New Roman", Times, serif;
+footer .redes ul {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  list-style: none;
+}
+footer .redes li {
+  margin: 5px;
+}
+footer .redes a {
+  padding: 1px;
+}
+footer .redes img {
+  height: 60px;
+  width: 55px;
+  margin: 10px;
+}
+footer .creado {
+  text-align: center;
+}
+footer .creado p {
+  color: #000000;
+  font-size: 20px;
+}
+
+.encabezado {
+  display: flex;
+  justify-content: center;
+}
+
+.encabezado h2 {
+  font-size: 30px;
+  padding: 10px;
+}
+
+.titulado {
+  padding: 15px;
 }
 
 .contenedor {
@@ -143,20 +181,183 @@ footer h4 {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
+  position: relative;
 }
 .contenedor .caja {
-  margin: 25px;
+  margin: 30px;
 }
 .contenedor .caja img {
   width: 300px;
-  border-radius: 10px;
-  padding: 15px;
+  border-radius: 20px;
+  box-shadow: 15px 18px 25px black;
+  padding: 5px;
   height: 300px;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+}
+.contenedor .caja img:hover {
+  transform: scale(1.1);
+  box-shadow: 13px 15px 17px black;
 }
 .contenedor .caja p {
   text-align: center;
+  padding: 25px;
   font-size: 20px;
   font-family: Arial, Helvetica, sans-serif;
+}
+
+@media (max-width: 900px) {
+  .logo img {
+    width: 330px;
+    height: 250px;
+  }
+
+  .logo h1 {
+    font-size: 40px;
+  }
+
+  header label img {
+    width: 60px;
+    height: 60px;
+    display: block;
+  }
+
+  .menu {
+    background-color: linear-gradient(to left, #740001, #ae0001, #eeba30, #d3a625);
+    position: absolute;
+    width: 70%;
+    margin-left: -70%;
+    transition: all 0.5s;
+  }
+
+  .menu ul {
+    flex-direction: column;
+  }
+
+  .menu li {
+    background-color: linear-gradient(to left, #740001, #ae0001, #eeba30, #d3a625);
+  }
+
+  .menu a {
+    font-size: 20px;
+    color: black;
+  }
+
+  #btn-menu:checked ~ .menu {
+    margin: 0;
+  }
+
+  footer {
+    background-color: linear-gradient(to left, #740001, #ae0001, #eeba30, #d3a625);
+  }
+  footer .redes ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    list-style: none;
+  }
+  footer .redes li {
+    margin: 5px;
+  }
+  footer .redes a {
+    padding: 1px;
+  }
+  footer .redes img {
+    height: 65px;
+    width: 60px;
+    margin: 15px;
+  }
+  footer .creado {
+    text-align: center;
+  }
+  footer .creado p {
+    color: #000000;
+    font-size: 30px;
+    padding: 5px;
+  }
+
+  main .daniel {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+}
+@media (max-width: 600px) {
+  .logo img {
+    width: 270px;
+    height: 260px;
+  }
+
+  .main h2 {
+    font-size: 40px;
+    padding: 10px;
+  }
+
+  .contenedor .caja1 {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  main .daniel {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+}
+@media (max-width: 400px) {
+  .logo img {
+    width: 250px;
+    height: 250px;
+  }
+}
+.main h2 {
+  font-size: 40px;
+}
+
+.main {
+  display: flex;
+  flex-direction: column;
+}
+
+.main .main1 img {
+  width: 300px;
+  height: 250px;
+}
+
+.main .main1 p {
+  font-size: 25px;
+}
+
+footer {
+  background-color: linear-gradient(to left, #740001, #ae0001, #eeba30, #d3a625);
+}
+footer .redes ul {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  list-style: none;
+}
+footer .redes li {
+  margin: 5px;
+}
+footer .redes a {
+  padding: 1px;
+}
+footer .redes img {
+  height: 60px;
+  width: 55px;
+  margin: 10px;
+}
+footer .creado {
+  text-align: center;
+}
+footer .creado p {
+  color: #000000;
+  font-size: 20px;
 }
 
 /*# sourceMappingURL=estilos.css.map */
