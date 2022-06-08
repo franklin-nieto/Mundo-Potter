@@ -14,6 +14,8 @@
 
 .logo{
     display: flex;
+    Filter: brightness (1.1);
+    Mix-blend-mode: multiply;
 
     img{
         width: 250px;
@@ -359,4 +361,22 @@ background: linear-gradient(to left, #740001,#ae0001,#eeba30,#d3a625);
                     font-size: 20px;
                 }
             }
+        
+        main .secreto img{
+            width: 300px;
+        }
+
+        main .tarjetas{
+            display: flex;
+            flex-direction: column;
+        }
+
+        main .destacado{
+            display: flex;
+            flex-direction: column;
+        }
+
+        main .destacado img{
+            width: 200px;
+        }
 }

@@ -61,6 +61,8 @@
 
 .logo {
   display: flex;
+  Filter: brightness 1.1;
+  Mix-blend-mode: multiply;
 }
 .logo img {
   width: 250px;
@@ -358,6 +360,20 @@ footer .creado {
 footer .creado p {
   color: #000000;
   font-size: 20px;
+}
+footer main .secreto img {
+  width: 300px;
+}
+footer main .tarjetas {
+  display: flex;
+  flex-direction: column;
+}
+footer main .destacado {
+  display: flex;
+  flex-direction: column;
+}
+footer main .destacado img {
+  width: 200px;
 }
 
 /*# sourceMappingURL=estilos.css.map */
